@@ -1,14 +1,35 @@
 {
-  "name": "create-playwright-starter",
+  "name": "@lw/create-playwright-starter",
   "version": "1.0.0",
+  "bin": "./bin/cli.js",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "ui": "npx playwright test --ui",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier . --check",
+    "prettier:fix": "prettier . --write",
+    "prepare": "husky install",
+    "test": "npx playwright test",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "test:only": "npx playwright test --grep @only --headed"
+  },
   "keywords": [],
-  "author": "Darko Anojcic",
+  "author": "LambdaWorks QA team",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.47.2",
-    "@types/node": "^22.5.5"
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^8.0.0",
+    "prettier": "3.3.2",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }
