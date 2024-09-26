@@ -1,5 +1,5 @@
 {
-  "name": "@lw/create-playwright-starter",
+  "name": "@lwqa/create-playwright-starter",
   "version": "1.0.0",
   "bin": "./bin/cli.js",
   "main": "index.js",
