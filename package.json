@@ -1,6 +1,6 @@
 {
-  "name": "@lwqa/create-playwright-starter",
-  "version": "1.0.1",
+  "name": "@qalw/create-playwright-starter",
+  "version": "1.0.2",
   "bin": "./bin/cli.js",
   "main": "index.js",
   "scripts": {
