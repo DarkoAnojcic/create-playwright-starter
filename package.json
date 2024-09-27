@@ -1,7 +1,6 @@
 {
-  "name": "@qalw/create-playwright-starter",
-  "version": "1.0.2",
-  "bin": "./bin/cli.js",
+  "name": "playwright-template-project",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "ui": "npx playwright test --ui",
